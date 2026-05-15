@@ -3,20 +3,20 @@
 Pipeline de données pour l'analyse des horaires ferroviaires SNCF et des trains de nuit européens, construit sur Databricks avec Delta Lake.
 
 ## Architecture
-
+```
 Sources GTFS (ZIP / CSV)  
-        ↓  
-    [BRONZE]  
+         ↓  
+      [BRONZE]  
 Ingestion brute → Unity Catalog Volumes  
-        ↓  
-    [SILVER]  
+         ↓  
+      [SILVER]  
 Nettoyage, typage, déduplication  
-        ↓  
-    [GOLD]  
+         ↓  
+       [GOLD]  
 Agrégation SNCF + Trains de nuit  
-        ↓  
+         ↓  
 Application Streamlit  
-
+```
 ## Sources de données  
 
 | Source | Format | URL |
