@@ -2,6 +2,16 @@
 
 Pipeline de données pour l'analyse des horaires ferroviaires SNCF et des trains de nuit européens, construit sur Databricks avec Delta Lake.
 
+## Section Contexte / Objectif
+
+Ce projet est né d'un besoin simple : savoir rapidement où l'on peut aller en train depuis chez soi.  
+
+Deux cas d'usage concrets :  
+ - Organiser un weekend — visualiser en un coup d'œil toutes les destinations accessibles en liaison directe depuis une gare, sans passer des heures sur des sites de réservation  
+ - Planifier un voyage en train de nuit — les liaisons nocturnes européennes sont souvent méconnues et difficiles à trouver. Ce projet les recense et les visualise simplement  
+
+
+
 ## Architecture
 ```
 Sources GTFS (ZIP / CSV)  
