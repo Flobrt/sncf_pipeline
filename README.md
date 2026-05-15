@@ -57,10 +57,10 @@ sncf_pipeline/
 
 ## Tables produites
 
-### 📦 Bronze
+### Bronze
 > Stockage brut dans `transport.bronze.gtfs_static` (Unity Catalog Volume)
 
-### 🥈 Silver — SNCF
+### Silver — SNCF
 
 | Table | Description |
 |-------|-------------|
@@ -76,7 +76,7 @@ sncf_pipeline/
 | `gtfs_transfers` | Correspondances |
 | `gtfs_calendar_dates` | Calendrier nettoyé |
 
-### 🥈 Silver — Trains de nuit
+### Silver — Trains de nuit
 
 | Table | Description |
 |-------|-------------|
@@ -86,7 +86,7 @@ sncf_pipeline/
 | `gtfs_stop_times_night` | Horaires trains de nuit |
 | `gtfs_calendar_dates_night` | Calendrier trains de nuit |
 
-### 🥇 Gold
+### Gold
 
 | Table | Description |
 |-------|-------------|
