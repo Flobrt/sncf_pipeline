@@ -114,3 +114,5 @@ Le pipeline tourne **tous les jours à 9h** via Databricks Workflows dans l'ordr
 bronze_gtfs → silver_gtfs  → gold_gtfs  
 bronze_nuit → silver_nuit ↗
 ```
+
+![Carte destinations](screenshots/image_pipeline.png)
