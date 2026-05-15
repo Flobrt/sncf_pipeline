@@ -4,20 +4,20 @@ Pipeline de données pour l'analyse des horaires ferroviaires SNCF et des trains
 
 ## Architecture
 
-Sources GTFS (ZIP / CSV)
-        ↓
-    [BRONZE]
-Ingestion brute → Unity Catalog Volumes
-        ↓
-    [SILVER]
-Nettoyage, typage, déduplication
-        ↓
-    [GOLD]
-Agrégation SNCF + Trains de nuit
-        ↓
-Application Streamlit
+Sources GTFS (ZIP / CSV)  
+        ↓  
+    [BRONZE]  
+Ingestion brute → Unity Catalog Volumes  
+        ↓  
+    [SILVER]  
+Nettoyage, typage, déduplication  
+        ↓  
+    [GOLD]  
+Agrégation SNCF + Trains de nuit  
+        ↓  
+Application Streamlit  
 
-## Sources de données
+## Sources de données  
 
 | Source | Format | URL |
 |--------|--------|-----|
@@ -39,18 +39,18 @@ Application Streamlit
 ---
 
 ## Structure du repo
-sncf_pipeline/
-└── src/
-│   └── notebooks/
-│       ├── Bronze/
-│       │   ├── bronze_gtfs.py          # Ingestion SNCF (ZIP GTFS)
-│       │   └── bronze_nuit.py          # Ingestion trains de nuit (CSV)
-│       ├── Silver/
-│       │   ├── silver_gtfs.py          # Nettoyage données SNCF
-│       │   └── silver_nuit.py          # Nettoyage trains de nuit
-│       └── Gold/
-│           └── gold_gtfs.py            # Agrégation finale
-└── README.md
+sncf_pipeline/  
+└── src/  
+│   └── notebooks/  
+│       ├── Bronze/  
+│       │   ├── bronze_gtfs.py          # Ingestion SNCF (ZIP GTFS)  
+│       │   └── bronze_nuit.py          # Ingestion trains de nuit (CSV)  
+│       ├── Silver/  
+│       │   ├── silver_gtfs.py          # Nettoyage données SNCF  
+│       │   └── silver_nuit.py          # Nettoyage trains de nuit  
+│       └── Gold/  
+│           └── gold_gtfs.py            # Agrégation finale  
+└── README.md  
 
 
 ---
@@ -97,6 +97,6 @@ sncf_pipeline/
 
 ## Orchestration
 
-Le pipeline tourne **tous les jours à 9h** via Databricks Workflows dans l'ordre suivant :
-bronze_gtfs → silver_gtfs  → gold_gtfs
-bronze_nuit → silver_nuit ↗
+Le pipeline tourne **tous les jours à 9h** via Databricks Workflows dans l'ordre suivant :  
+bronze_gtfs → silver_gtfs  → gold_gtfs  
+bronze_nuit → silver_nuit ↗  
