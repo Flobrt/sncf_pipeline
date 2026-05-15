@@ -116,3 +116,6 @@ bronze_nuit → silver_nuit ↗
 ```
 
 ![Carte destinations](screenshots/image_pipeline.png)
+
+## Contact 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/florian-berthelot-ba2252173/)  
