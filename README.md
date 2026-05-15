@@ -39,6 +39,8 @@ Application Streamlit
 ---
 
 ## Structure du repo
+
+```
 sncf_pipeline/  
 └── src/  
 │   └── notebooks/  
@@ -51,7 +53,7 @@ sncf_pipeline/
 │       └── Gold/  
 │           └── gold_gtfs.py            # Agrégation finale  
 └── README.md  
-
+```
 
 ---
 
